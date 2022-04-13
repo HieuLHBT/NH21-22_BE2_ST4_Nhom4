@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
         // \App\Models\User::factory(10)->create();
         DB::table('products')->insert([
             'manu_id' =>'1',
@@ -24,6 +25,69 @@ class DatabaseSeeder extends Seeder
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-1-2.jpg',
             'description'=>'Màn hình: OLED6.7"Super Retina XDR
             Hệ điều hành: iOS 15
+=======
+        // Table Users
+        DB::table('users')->insert([
+            'username' =>'user1',
+            'password' =>'user1',
+            'phone' =>'0987654321',
+        ]);
+
+        DB::table('users')->insert([
+            'username' =>'user2',
+            'password' =>'user2',
+            'phone' =>'0123456789',
+        ]);
+
+        DB::table('users')->insert([
+            'username' =>'user3',
+            'password' =>'user3',
+            'phone' =>'0987654123',
+        ]);
+
+        DB::table('users')->insert([
+            'username' =>'user4',
+            'password' =>'user4',
+            'phone' =>'0123456987',
+        ]);
+
+        DB::table('users')->insert([
+            'username' =>'user5',
+            'password' =>'user6',
+            'phone' =>'0912345678',
+        ]);
+
+        // Table Manufacturers
+        DB::table('manufacturers')->insert([
+            'manu_name' =>'Apple',
+        ]);
+
+        DB::table('manufacturers')->insert([
+            'manu_name' =>'Samsung',
+        ]);
+
+        DB::table('manufacturers')->insert([
+            'manu_name' =>'Oppo',
+        ]);
+
+        DB::table('manufacturers')->insert([
+            'manu_name' =>'Xiaomi',
+        ]);
+
+        DB::table('manufacturers')->insert([
+            'manu_name' =>'Realme',
+        ]);
+
+
+        // Table Products
+        DB::table('products')->insert([
+            'manu_id' =>'1',
+            'product_name' =>'Điện thoại iPhone 13 Pro Max 128GB',
+            'price'=>'32390000',
+            'image'=>'https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-1-2.jpg',
+            'description'=>'Màn hình: OLED6.7"Super Retina XDR
+            Hệ điều hành:iOS 15
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             Camera sau: 3 camera 12 MP
             Camera trước: 12 MP
             Chip: Apple A15 Bionic
@@ -38,7 +102,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'1',
+<<<<<<< HEAD
             'name' =>'Điện thoại iPhone 13 Pro 128GB',
+=======
+            'product_name' =>'Điện thoại iPhone 13 Pro 128GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'29990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/230521/iphone-13-pro-xam-1.jpg',
             'description'=>'Màn hình: OLED6.1"Super Retina XDR
@@ -57,7 +125,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'1',
+<<<<<<< HEAD
             'name' =>'Điện thoại iPhone 13 128GB',
+=======
+            'product_name' =>'Điện thoại iPhone 13 128GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'22790000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-blue-1-200x200.jpg',
             'description'=>'Màn hình: OLED6.1"Super Retina XDR
@@ -76,7 +148,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'1',
+<<<<<<< HEAD
             'name' =>'Điện thoại iPhone 12 Pro Max 256GB',
+=======
+            'product_name' =>'Điện thoại iPhone 12 Pro Max 256GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'29990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/228743/iphone-12-pro-max-256gb-1-org.jpg',
             'description'=>'Màn hình: OLED6.7"Super Retina XDR
@@ -95,7 +171,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'1',
+<<<<<<< HEAD
             'name' =>'Điện thoại iPhone 12 Pro 256GB',
+=======
+            'product_name' =>'Điện thoại iPhone 12 Pro 256GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'26290000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/228738/iphone-12-pro-vang-dong-new-600x600-200x200.jpg',
             'description'=>'Màn hình: OLED6.1"Super Retina XDR
@@ -114,7 +194,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'2',
+<<<<<<< HEAD
             'name' =>'Điện thoại Samsung Galaxy S22 Ultra 5G 128GB',
+=======
+            'product_name' =>'Điện thoại Samsung Galaxy S22 Ultra 5G 128GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'30990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/235838/samsung-galaxy-s22-ultra-1-1.jpg',
             'description'=>'Màn hình: Dynamic AMOLED 2X6.8"Quad HD+ (2K+)
@@ -133,7 +217,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'2',
+<<<<<<< HEAD
             'name' =>'Điện thoại Samsung Galaxy S21 Ultra 5G 128GB',
+=======
+            'product_name' =>'Điện thoại Samsung Galaxy S21 Ultra 5G 128GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'25990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/226316/samsung-galaxy-s21-ultra-bac-600x600-1-200x200.jpg',
             'description'=>'Màn hình: Dynamic AMOLED 2X6.8"Quad HD+ (2K+)
@@ -152,7 +240,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'2',
+<<<<<<< HEAD
             'name' =>'Điện thoại Samsung Galaxy Z Flip3 5G 128GB',
+=======
+            'product_name' =>'Điện thoại Samsung Galaxy Z Flip3 5G 128GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'19990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/229949/samsung-galaxy-z-flip-3-black-1-200x200.jpg',
             'description'=>'Màn hình: Dynamic AMOLED 2X6.8"Quad HD+ (2K+)
@@ -171,7 +263,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'2',
+<<<<<<< HEAD
             'name' =>'Điện thoại Samsung Galaxy Z Fold3 5G 256GB ',
+=======
+            'product_name' =>'Điện thoại Samsung Galaxy Z Fold3 5G 256GB ',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'36990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-green-1-200x200.jpg',
             'description'=>'Màn hình: Dynamic AMOLED 2XChính 7.6" & Phụ 6.2"Full HD+
@@ -190,7 +286,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'2',
+<<<<<<< HEAD
             'name' =>'Điện thoại Samsung Galaxy S22+ 5G 128GB',
+=======
+            'product_name' =>'Điện thoại Samsung Galaxy S22+ 5G 128GB',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'25990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/242439/Galaxy-S22-Plus-Black-200x200.jpg',
             'description'=>'Màn hình: Dynamic AMOLED 2X6.6"Full HD+
@@ -209,7 +309,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'3',
+<<<<<<< HEAD
             'name' =>'Điện thoại OPPO Reno7 Z 5G',
+=======
+            'product_name' =>'Điện thoại OPPO Reno7 Z 5G',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'10490000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/271717/oppo-reno7-z-5g-thumb-2-1-200x200.jpg',
             'description'=>'Màn hình: AMOLED6.43"Full HD+
@@ -228,7 +332,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'3',
+<<<<<<< HEAD
             'name' =>'Điện thoại OPPO Reno6 5G',
+=======
+            'product_name' =>'Điện thoại OPPO Reno6 5G',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'11990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/236186/oppo-reno6-5g-aurora-200x200.jpg',
             'description'=>'Màn hình: AMOLED6.43"Full HD+
@@ -247,7 +355,11 @@ class DatabaseSeeder extends Seeder
 
         DB::table('products')->insert([
             'manu_id' =>'3',
+<<<<<<< HEAD
             'name' =>'Điện thoại OPPO Reno5 5G',
+=======
+            'product_name' =>'Điện thoại OPPO Reno5 5G',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'8990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/233460/oppo-reno5-5g-black-thumb-200x200.jpg',
             'description'=>'Màn hình: AMOLED6.43"Full HD+
@@ -263,10 +375,55 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //1
         DB::table('products')->insert([
             'manu_id' =>'4',
             'name' =>'Điện thoại Xiaomi Redmi 9A',
+=======
+
+        DB::table('products')->insert([
+            'manu_id' =>'3',
+            'product_name' =>'Điện thoại OPPO A16',
+            'price'=>'3990000',
+            'image'=>'https://cdn.tgdd.vn/Products/Images/42/240631/oppo-a16-silver-8-600x600.jpg',
+            'description'=>'Màn hình IPS LCD 6.52" HD+
+            Hệ điều hành: Android 11
+            Camera sau: Chính 13 MP & Phụ 2 MP, 2 MP
+            Camera trước: 8 MP
+            Chip: MediaTek Helio G35
+            RAM: 3 GB
+            Bộ nhớ trong: 32 GB
+            SIM: 2 Nano SIM Hỗ trợ 4G
+            Pin, Sạc: 5000 mAh, 10 W',
+            'quantity'=>'10',
+            'feature'=>'0',
+            'create_at'=>'2022-04-09',
+        ]);
+   
+        DB::table('products')->insert([
+            'manu_id' =>'3',
+            'product_name' =>'Điện thoại OPPO A15s',
+            'price'=>'4290000',
+            'image'=>'https://cdn.tgdd.vn/Products/Images/42/229948/TimerThumb/oppo-a15s-(10).jpg',
+            'description'=>'Màn hình IPS LCD 6.52" HD+
+            Hệ điều hành: Android 11
+            Camera sau: Chính 13 MP & Phụ 2 MP, 2 MP
+            Camera trước: 8 MP
+            Chip: MediaTek Helio P35
+            RAM: 4 GB
+            Bộ nhớ trong: 64 GB
+            SIM: 2 Nano SIM Hỗ trợ 4G
+            Pin, Sạc: 4230 mAh, 10 W',
+            'quantity'=>'10',
+            'feature'=>'0',
+            'create_at'=>'2022-04-09',
+        ]);
+  
+        DB::table('products')->insert([
+            'manu_id' =>'4',
+            'product_name' =>'Điện thoại Xiaomi Redmi 9A',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'2490000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/218734/xiaomi-redmi-9a-grey-600x600-1-600x600.jpg',
             'description'=>'Màn hình: IPS LCD 6.53" HD+
@@ -282,10 +439,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //2
         DB::table('products')->insert([
             'manu_id' =>'4',
             'name' =>'Điện thoại Xiaomi Redmi 10',
+=======
+     
+        DB::table('products')->insert([
+            'manu_id' =>'4',
+            'product_name' =>'Điện thoại Xiaomi Redmi 10',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'4290000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/249081/redmi-10-gray-600x600.jpg',
             'description'=>'Màn hình: IPS LCD 6.5" Full HD+
@@ -301,10 +465,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //3
         DB::table('products')->insert([
             'manu_id' =>'4',
             'name' =>'Điện thoại Xiaomi Mi 11 Lite',
+=======
+    
+        DB::table('products')->insert([
+            'manu_id' =>'4',
+            'product_name' =>'Điện thoại Xiaomi Mi 11 Lite',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'7990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/233241/xiaomi-mi-11-lite-4g-blue-600x600.jpg',
             'description'=>'Màn hình: AMOLED 6.55" Full HD+
@@ -320,10 +491,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //4
         DB::table('products')->insert([
             'manu_id' =>'4',
             'name' =>'Điện thoại Xiaomi Redmi Note 10S',
+=======
+    
+        DB::table('products')->insert([
+            'manu_id' =>'4',
+            'product_name' =>'Điện thoại Xiaomi Redmi Note 10S',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'6490000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/235969/TimerThumb/xiaomi-redmi-note-10s-(4).jpg',
             'description'=>'Màn hình: AMOLED 6.43" Full HD+
@@ -339,10 +517,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //5
         DB::table('products')->insert([
             'manu_id' =>'4',
             'name' =>'Điện thoại Xiaomi Redmi Note 10S ',
+=======
+     
+        DB::table('products')->insert([
+            'manu_id' =>'4',
+            'product_name' =>'Điện thoại Xiaomi Redmi Note 10S ',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'5990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/262534/TimerThumb/xiaomi-redmi-note-10s-6gb-(2).jpg',
             'description'=>'Màn hình: AMOLED 6.43" Full HD+
@@ -358,10 +543,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //1
         DB::table('products')->insert([
             'manu_id' =>'5',
             'name' =>'Điện thoại Realme C35 ',
+=======
+     
+        DB::table('products')->insert([
+            'manu_id' =>'5',
+            'product_name' =>'Điện thoại Realme C35 ',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'3990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/261888/realme-c35-thumb-new-600x600.jpg',
             'description'=>'Màn hình: IPS LCD 6.6" Full HD+
@@ -377,10 +569,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //2
         DB::table('products')->insert([
             'manu_id' =>'5',
             'name' =>'Điện thoại Realme 7 Pro ',
+=======
+     
+        DB::table('products')->insert([
+            'manu_id' =>'5',
+            'product_name' =>'Điện thoại Realme 7 Pro ',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'8990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/227689/realme-7-pro-bac-600x600.jpg',
             'description'=>'Màn hình: Super AMOLED 6.4" Full HD+
@@ -396,10 +595,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //3
         DB::table('products')->insert([
             'manu_id' =>'5',
             'name' =>'Điện thoại Realme C25Y ',
+=======
+   
+        DB::table('products')->insert([
+            'manu_id' =>'5',
+            'product_name' =>'Điện thoại Realme C25Y ',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'4690000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/265313/realme-c25y-64gb-xanh-thumb-600x600.jpeg',
             'description'=>'Màn hình: IPS LCD 6.5" HD+
@@ -415,10 +621,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //4
         DB::table('products')->insert([
             'manu_id' =>'5',
             'name' =>'Điện thoại Realme C25 series ',
+=======
+
+        DB::table('products')->insert([
+            'manu_id' =>'5',
+            'product_name' =>'Điện thoại Realme C25 series ',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'4690000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/235996/realme-c25-black-600x600-600x600.jpg',
             'description'=>'Màn hình: IPS LCD 6.5" HD+
@@ -434,10 +647,17 @@ class DatabaseSeeder extends Seeder
             'feature'=>'0',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //5
         DB::table('products')->insert([
             'manu_id' =>'5',
             'name' =>'Điện thoại Realme C11',
+=======
+   
+        DB::table('products')->insert([
+            'manu_id' =>'5',
+            'product_name' =>'Điện thoại Realme C11',
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
             'price'=>'2990000',
             'image'=>'https://cdn.tgdd.vn/Products/Images/42/261957/realme-c11-2021-2gb-32gb-xanh-600x600.jpg',
             'description'=>'Màn hình IPS LCD, 6.5", HD+
@@ -453,6 +673,7 @@ class DatabaseSeeder extends Seeder
             'feature'=>'1',
             'create_at'=>'2022-04-09',
         ]);
+<<<<<<< HEAD
         //1 
         DB::table('products')->insert([
             'manu_id' =>'3',
@@ -491,5 +712,8 @@ class DatabaseSeeder extends Seeder
             'feature'=>'0',
             'create_at'=>'2022-04-09',
         ]);
+=======
+        
+>>>>>>> 207e38b4516a38b36a3ebd19469eba2efe46ee50
     }
 }
