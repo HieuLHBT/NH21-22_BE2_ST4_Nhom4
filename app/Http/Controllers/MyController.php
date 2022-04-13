@@ -3,26 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class MyController extends Controller
 {
-    function index() {
-        return view('index');
-    }
+    function index($name = 'index') {
+        $products = Product::all();
+       
+        return view($name,['data'=>$products]);
+    }   
 
-    function blank() {
-        return view('blank');
-    }
-
-    function checkout() {
-        return view('checkout');
-    }
-
-    function store() {
-        return view('store');
-    }
-    
-    function product() {
-        return view('product');
-    }
 }
