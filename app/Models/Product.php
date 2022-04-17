@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+<<<<<<< HEAD
     public function details()
     {
         
@@ -22,4 +23,6 @@ class Product extends Model
     {
         return $this->hasMany(Manufacture::class);
     }
+=======
+>>>>>>> 4c7d1aa5cb90f964149f542c10252e1643ebbbec
 }
