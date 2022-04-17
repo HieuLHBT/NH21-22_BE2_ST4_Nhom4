@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('product_name');
             $table->integer('price');
             $table->string('image');
-            $table->string('description', 1000);
+            $table->text('description');
             $table->integer('quantity');
             $table->tinyinteger('feature');
             $table->timestamp('create_at');
