@@ -792,6 +792,7 @@ textarea.input {
 }
 
 .shop .shop-img {
+    text-align: right;
     position: relative;
     background-color: #E4E7ED;
     z-index: -1;
@@ -799,6 +800,8 @@ textarea.input {
 
 .shop .shop-img>img {
     width: 100%;
+    width: 150px;
+    height: 150px;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
 }
