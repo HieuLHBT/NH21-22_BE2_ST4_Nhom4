@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Manufacture extends Model
 {
     use HasFactory;
-    protected $primaryKey = 'payment_id';
-    public function payments()
+    public function products()
     {
-        return $this->hasMany(Payment::class, 'payment_id');
+        return $this->hasMany(Product::class, 'product_id','manu_id');
     }
 }
