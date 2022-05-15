@@ -14,10 +14,12 @@ class CreateDetailsTable extends Migration
     public function up()
     {
         Schema::create('details', function (Blueprint $table) {
+            $table->id('detail_id');
             $table->integer('product_id');
             $table->integer('payment_id');
-            $table->primary(['product_id', 'payment_id']);
+            // $table->primary(['product_id', 'payment_id']);
             $table->integer('quantity');
+            $table->timestamps();
         });
     }
 
