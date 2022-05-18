@@ -34,7 +34,7 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/mail', [MyController::class, 'mail']); 
 Route::get('/createpayment', [MyController::class, 'createpayment']); 
 Route::get('/payments', [MyController::class, 'payments']); 
-Route::get('/sort/{option}/{key}', [MyController::class, 'sort']); 
+Route::get('/sort/{option}/{key?}', [MyController::class, 'sort']); 
 Route::get('/searchoption/{option}/{key?}', [MyController::class, 'searchoption']); 
 Route::get('/search', [MyController::class, 'search']); 
 Route::get('/others/clearcompare', [MyController::class, 'clearcompare']);

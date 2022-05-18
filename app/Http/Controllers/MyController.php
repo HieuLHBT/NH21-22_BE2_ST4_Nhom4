@@ -164,7 +164,7 @@ class MyController extends Controller
         ]);
     }
 
-    function sort($option, $key)
+    function sort($option, $key = "")
     {
         $user = Auth::user();
         if ($user != NULL) {
